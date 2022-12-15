@@ -29,3 +29,11 @@ metin = input("Çeviri yapılacak metni giriniz  :   ")
 for i in range(12):
     metin=metin.replace(önceki_karakterler[i],sonraki_karakterler[i])
 print(metin)
+
+aranan_harf=input("Lütfen aradığınız harfi giriniz:\t")
+adet=0
+for karakter in metin:
+    if karakter==aranan_harf:
+        adet+=1
+print(adet)
+
